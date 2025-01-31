@@ -34,21 +34,21 @@ const App = () => {
   // Data for the cards
   const cardData = [
     {
-      image: "/exemplo-mui/img-1.jpeg",
+      image: "https://assets.2k.com/1a6ngf98576c/4qIzlJ1qivEOKgSJSU6zbG/d5c24b927a9c3e630138e17eb4c10bb2/Leaders_Catherine_400x240.jpg",
       title: "SIM do Município",
       description:
         "Acesse os dados enviados pelos os municípios através do SIM.",
       onClick: () => console.log("Acessar SIM do Município"),
     },
     {
-      image: "/exemplo-mui/img-2.jpeg",
+      image: "https://assets.2k.com/1a6ngf98576c/65pGWxSViha5meZ3rOZAY/4f2ede0ef6caa478393925f3b4253fe2/Civilizations_Confusius_400x240.png",
       title: "TCE",
       description:
         "Acesse as informações sobre o tribunal de contas de um município escolhido.",
       onClick: () => console.log("Acessar SIM do Município"),
     },
     {
-      image: "/exemplo-mui/img-3.jpeg",
+      image: "https://assets.2k.com/1a6ngf98576c/2MNo3ICjvLnEufbeqVNcAJ/21291cf5f44a7ca7aeea9ec0653c5197/Leaders_Jose-Rizal_400x240.jpg",
       title: "Fornecedores",
       description:
         "Acesse as informações de fornecedores de um município escolhido.",
@@ -137,12 +137,13 @@ const App = () => {
                     sx={{
                       width: "100%",
                       boxShadow: 0,
-                      border: "1px solid #CBD5E1",
+                      border: "1px yellow",
                       borderRadius: 2,
                       minHeight: "100%",
                     }}
                   >
                     <CardMedia
+                      
                       sx={{ height: 100 }}
                       image={card.image}
                       title={card.title}
@@ -157,6 +158,7 @@ const App = () => {
                         gutterBottom
                         variant="h5"
                         component="div"
+                        color = "yellow"
                         sx={{ fontWeight: "bold" }}
                       >
                         {card.title}
